@@ -1,0 +1,11 @@
+.root {
+  & > div {
+    & > div:last-child {
+      @apply flex justify-end space-x-2;
+    }
+  }
+}
+
+.button {
+  @apply text-red-500;
+}

@@ -1,0 +1,64 @@
+@import '../../../../../app/styles/variables';
+
+$shadow:
+  0 10px 10px 0 rgb(0 0 0 / 15%),
+  0 6px 6px 0 rgb(0 0 0 / 15%),
+  0 3px 3px 0 rgb(0 0 0 / 15%);
+
+.root {
+  @include fade-bg-gradient(0deg);
+  @apply relative flex items-end mb-10 h-44 transition-transform animate-fade;
+
+  &::before {
+    @apply rounded-md overflow-hidden;
+  }
+
+  & > img {
+    z-index: 2;
+  }
+
+  img {
+    object-position: center;
+    object-fit: cover;
+    pointer-events: none;
+    @apply rounded-md overflow-hidden;
+  }
+
+  > span {
+    z-index: 1;
+  }
+
+  .behind {
+    z-index: 2;
+    @apply absolute overflow-hidden transition-transform;
+
+    &.second {
+      z-index: 1;
+      @apply opacity-60 -top-1.5 left-2.5 right-2.5 bottom-4;
+    }
+
+    &.third {
+      z-index: 0;
+      @apply opacity-40 -top-3 left-5 right-5 bottom-8;
+    }
+  }
+
+  &:hover {
+    @apply -translate-y-1;
+
+    .behind {
+      &.second {
+        transform: translateY(1px);
+      }
+
+      &.third {
+        transform: translateY(2px);
+      }
+    }
+  }
+
+  .content {
+    z-index: 3;
+    @apply relative  text-center m-3 w-full px-3 pb-1;
+  }
+}

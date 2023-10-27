@@ -1,0 +1,35 @@
+.root {
+  height: 100px;
+  @apply flex justify-between;
+
+  & > div {
+    @apply h-full;
+  }
+
+  & > div:first-child {
+    @apply flex flex-col justify-between;
+  }
+
+  & > div:last-child {
+    width: 100px;
+    height: 100px;
+    @apply relative bg-zinc-800 rounded-md overflow-hidden;
+
+    & > img {
+      @apply w-full h-full object-cover;
+    }
+  }
+}
+
+.label {
+  @apply text-sm uppercase text-gray-600;
+}
+
+.error {
+  @apply text-sm text-red-500;
+}
+
+.skeleton {
+  width: 100px;
+  height: 100px;
+}

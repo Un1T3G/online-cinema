@@ -1,0 +1,39 @@
+.Toastify__toast {
+  font-family: 'Outfit', sans-serif;
+  @apply bg-zinc-800 p-0 rounded-md min-h-0;
+
+  & > button[aria-label='close'] {
+    @apply hidden;
+  }
+
+  &.Toastify__toast--success {
+    @apply text-green-500;
+
+    & .Toastify__progress-bar {
+      @apply bg-green-500;
+    }
+  }
+
+  &.Toastify__toast--error {
+    @apply text-red-500;
+
+    & .Toastify__progress-bar {
+      @apply bg-red-500;
+    }
+  }
+}
+.Toastify__toast--rtl {
+  @apply text-white;
+}
+.Toastify__toast-body {
+  @apply px-3 pt-2 pb-3;
+}
+
+.Toastify__progress-bar {
+  @apply bg-red-500;
+}
+
+/** Used to position the icon **/
+.Toastify__toast-icon {
+  @apply text-xl;
+}

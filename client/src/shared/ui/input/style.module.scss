@@ -1,0 +1,83 @@
+.input-base {
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+}
+
+.input-standard {
+  composes: input-base;
+  border-bottom: 1px solid theme('colors.gray.600');
+
+  &:focus {
+    outline: none;
+    border-bottom-color: theme('colors.red.500');
+  }
+}
+
+.input-rounded {
+  height: 35px;
+  composes: input-base;
+  @apply px-3;
+  border: 1px solid theme('colors.gray.600');
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
+  &:focus {
+    outline: none;
+    border-color: theme('colors.red.500');
+  }
+
+  & > .element-base {
+    width: 35px;
+  }
+
+  & > .input-has-left-element {
+    padding-left: 35px;
+  }
+
+  & > .input-has-right-element {
+    padding-right: 35px;
+  }
+}
+
+.input-has-left-element {
+  padding-left: 45px;
+}
+
+.input-has-right-element {
+  padding-right: 45px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  @apply text-sm;
+}
+
+.element-base {
+  position: absolute;
+  width: 45px;
+  height: 100%;
+  top: 0;
+  @apply flex items-center justify-center;
+}
+
+.element-left {
+  composes: element-base;
+  left: 0;
+}
+
+.element-right {
+  composes: element-base;
+  right: 0;
+}
+
+.input-container {
+  position: relative;
+}
+
+.error-message {
+  @apply text-red-500;
+}

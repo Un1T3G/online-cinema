@@ -1,0 +1,38 @@
+.button-base {
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: theme('borderRadius.lg');
+  transition: background-color 300ms ease;
+
+  &:disabled {
+    opacity: 0.75;
+  }
+}
+
+.button-primary {
+  composes: button-base;
+
+  background-color: theme('colors.red.500');
+
+  &:hover {
+    background-color: theme('colors.red.300');
+  }
+
+  &:active {
+    background-color: theme('colors.red.400');
+  }
+}
+
+.button-primary-darken {
+  composes: button-base;
+
+  background-color: theme('colors.red.600');
+
+  &:hover {
+    background-color: theme('colors.red.400');
+  }
+
+  &:active {
+    background-color: theme('colors.red.500');
+  }
+}

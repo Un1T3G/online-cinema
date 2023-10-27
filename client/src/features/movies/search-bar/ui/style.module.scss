@@ -1,0 +1,7 @@
+.root {
+  @apply relative px-5;
+}
+
+.card {
+  @apply rounded-md bg-zinc-800 py-3 absolute left-5 right-5 -bottom-3 translate-y-full;
+}

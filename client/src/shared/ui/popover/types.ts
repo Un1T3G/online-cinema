@@ -1,0 +1,13 @@
+export type TAlignment =
+  | 'topLeft'
+  | 'topCenter'
+  | 'topRight'
+  | 'leftTop'
+  | 'leftCenter'
+  | 'leftBottom'
+  | 'bottomLeft'
+  | 'bottomCenter'
+  | 'bottomRight'
+  | 'rightTop'
+  | 'rightCenter'
+  | 'rightBottom'

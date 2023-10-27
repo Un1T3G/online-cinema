@@ -1,0 +1,16 @@
+.root {
+  padding-top: 100px;
+  @apply flex justify-center;
+}
+
+.card {
+  max-width: 320px;
+  @apply bg-zinc-800  rounded-md  px-6 py-5 w-full;
+  & > div {
+    @apply mb-3;
+  }
+}
+
+.button {
+  @apply w-full mt-3;
+}

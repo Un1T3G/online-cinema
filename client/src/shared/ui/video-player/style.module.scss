@@ -1,0 +1,31 @@
+.root {
+  @apply relative bg-black rounded-md overflow-hidden;
+
+  & > video {
+    @apply w-full h-full;
+  }
+
+  & > div {
+    @apply absolute bottom-0 left-0 w-full px-4;
+    padding-bottom: 10px;
+  }
+}
+
+.row {
+  margin-top: 8px;
+  @apply flex justify-between;
+
+  & > div {
+    @apply flex items-center space-x-3;
+
+    & > div {
+      font-size: 14px;
+      @apply flex space-x-2 text-gray-200;
+    }
+  }
+}
+
+.button {
+  font-size: 24px;
+  @apply cursor-pointer text-white;
+}

@@ -1,0 +1,47 @@
+.selected-list {
+  @apply list-none flex flex-wrap gap-2 py-2;
+}
+
+.selected-list__item {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  @apply px-2 rounded-md flex items-center bg-gray-600 text-white;
+
+  &:hover {
+    @apply bg-gray-400;
+  }
+
+  & > button {
+    margin-left: 5px;
+  }
+
+  animation: fade 300ms ease forwards;
+  -webkit-animation: fade 300ms ease forwards;
+}
+
+.list {
+  @apply list-none overflow-hidden py-1;
+}
+
+.list__item {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  @apply flex items-center justify-between  px-3 cursor-pointer duration-300 transition-all;
+
+  &:hover {
+    @apply bg-white/30;
+  }
+
+  &:active {
+    @apply bg-white/20;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

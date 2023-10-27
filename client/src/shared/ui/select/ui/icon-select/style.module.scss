@@ -1,0 +1,25 @@
+.label {
+  @apply flex items-center space-x-3;
+}
+
+.list {
+  @apply list-none overflow-hidden py-1;
+}
+
+.list__item {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  @apply flex items-center justify-between  px-3 cursor-pointer duration-300 transition-all;
+
+  &:hover {
+    @apply bg-white/30;
+  }
+
+  &:active {
+    @apply bg-white/20;
+  }
+
+  & > div {
+    @apply flex items-center space-x-3;
+  }
+}

@@ -1,0 +1,12 @@
+.root {
+  @apply flex flex-col items-center justify-center;
+}
+
+.title {
+  font-size: 45px;
+  @apply font-bold;
+}
+
+.sub-title {
+  @apply font-bold;
+}

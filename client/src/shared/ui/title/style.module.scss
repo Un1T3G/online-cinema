@@ -1,0 +1,18 @@
+.title-base {
+  font-weight: bold;
+}
+
+.title-sm {
+  font-size: 18px;
+  composes: title-base;
+}
+
+.title-xl {
+  font-size: 24px;
+  composes: title-base;
+}
+
+.title-lg {
+  font-size: 32px;
+  composes: title-base;
+}

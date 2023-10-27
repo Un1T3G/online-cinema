@@ -1,0 +1,21 @@
+.root {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  font-weight: bold;
+  padding: 0 20px;
+  margin-bottom: 5px;
+}
+
+.menu-list {
+  list-style: none;
+
+  & > li {
+    display: block;
+  }
+}

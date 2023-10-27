@@ -1,0 +1,46 @@
+.root {
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  z-index: 3;
+  display: flex;
+  @apply space-x-2;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    width: 35px;
+    height: 35px;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    @apply bg-white/10;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    &:hover {
+      @apply bg-white/30;
+    }
+
+    &:active {
+      @apply bg-white/20;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  width: 280px;
+  padding: 28px 0;
+  border-right: 1px solid theme('colors.gray.600');
+}

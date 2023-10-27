@@ -1,0 +1,16 @@
+.root {
+  @apply flex justify-center;
+}
+
+.card {
+  padding: 20px 25px;
+  @apply flex flex-col items-center bg-zinc-800 rounded-md;
+}
+
+.title {
+  @apply font-bold;
+}
+
+.sub-title {
+  @apply opacity-70;
+}

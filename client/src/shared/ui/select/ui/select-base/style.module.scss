@@ -1,0 +1,31 @@
+.root {
+  @apply flex items-center border-b-[1px] border-b-gray-600;
+  & > div {
+    @apply flex justify-between flex-1;
+  }
+}
+
+.clear-button {
+  animation: fade 300ms ease forwards;
+  -webkit-animation: fade 300ms ease forwards;
+}
+
+.toggle-button {
+  width: 45px;
+  height: 45px;
+  @apply flex items-center justify-center;
+}
+
+.list-root {
+  max-width: 320px;
+  max-height: 400px;
+  @apply w-full overflow-y-auto;
+}
+
+.label {
+  @apply text-gray-600;
+}
+
+.error {
+  @apply text-red-500 text-sm;
+}

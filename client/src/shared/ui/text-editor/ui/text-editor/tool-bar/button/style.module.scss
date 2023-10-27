@@ -1,0 +1,13 @@
+.root {
+  width: 25px;
+  height: 25px;
+  @apply rounded-md bg-zinc-600 flex items-center justify-center;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.error {
+  @apply text-red-500;
+}

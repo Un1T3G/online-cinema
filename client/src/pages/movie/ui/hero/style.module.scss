@@ -1,0 +1,74 @@
+@import '../../../../app/styles/variables';
+
+.root {
+  height: 280px;
+  margin-bottom: 25px;
+  @apply rounded-lg relative overflow-hidden;
+}
+
+.poster {
+  z-index: 0;
+  @apply absolute top-0 left-0 w-full h-full;
+}
+
+.content {
+  z-index: 1;
+  padding: 25px;
+  @apply relative w-full h-full flex items-end;
+  @include fade-bg-gradient(90deg);
+
+  & > div {
+    z-index: 2;
+    @apply flex-1 relative;
+  }
+}
+
+.row {
+  @apply flex;
+
+  & > div:first-child {
+    @apply flex-1;
+  }
+
+  & > div:last-child {
+    @apply flex flex-col items-center;
+  }
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 5px;
+  line-height: 1.2;
+  @apply font-bold;
+}
+
+.parameters {
+  @apply font-bold block;
+  margin-bottom: 10px;
+}
+
+.genres,
+.actors {
+  @apply flex font-bold;
+
+  & > span {
+    opacity: 0.75;
+    margin-right: 5px;
+  }
+
+  & > div {
+    @apply text-gray-400;
+  }
+}
+
+.rating {
+  @apply flex items-center font-bold;
+
+  & > span {
+    margin-right: 5px;
+  }
+
+  & > svg {
+    @apply text-yellow-500;
+  }
+}

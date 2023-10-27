@@ -1,0 +1,29 @@
+.root {
+  @apply flex items-center transition-colors duration-300 py-1 px-5;
+
+  &:hover {
+    @apply bg-white/30;
+  }
+
+  &:active {
+    @apply bg-white/20;
+  }
+
+  & > div:last-child {
+    @apply ml-auto text-xl;
+  }
+}
+
+.poster {
+  height: 60px;
+  flex: 0 0 60px;
+  @apply relative mr-2 rounded-md overflow-hidden;
+
+  & > img {
+    @apply object-cover w-full h-full;
+  }
+}
+
+.title {
+  @apply font-bold text-sm;
+}

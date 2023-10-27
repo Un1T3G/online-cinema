@@ -1,0 +1,22 @@
+.root {
+  border-width: 1px;
+  @apply w-full rounded-md border-gray-600 rounded-md;
+
+  & > div:last-child {
+    min-height: 220px;
+    @apply rounded-md p-3 rounded-t-none;
+
+    &:focus {
+      @apply outline-none;
+    }
+  }
+}
+
+.input {
+  & > div {
+    @apply border-none;
+    &:focus-visible {
+      @apply outline-none;
+    }
+  }
+}

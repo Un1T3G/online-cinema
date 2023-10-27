@@ -1,0 +1,21 @@
+.root {
+  @apply space-y-3;
+}
+
+.row-base {
+  @apply rounded-md px-5 py-2 flex;
+}
+
+.header {
+  composes: row-base;
+  @apply bg-red-600 font-bold;
+}
+
+.row {
+  composes: row-base;
+  @apply bg-zinc-800;
+}
+
+.item {
+  @apply flex-1;
+}

@@ -1,0 +1,11 @@
+.row {
+  @apply flex space-x-5 mb-5;
+
+  & > div {
+    @apply flex-1;
+  }
+}
+
+.input__title {
+  @apply text-gray-600 uppercase;
+}

@@ -1,0 +1,12 @@
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 4px solid rgba($color: #fff, $alpha: 0.5);
+  border-top-color: white;
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
+  @apply animate-spin;
+}

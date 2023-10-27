@@ -1,0 +1,11 @@
+.root {
+  @apply flex space-x-1;
+}
+
+.item {
+  font-size: 25px;
+  @apply text-yellow-500 cursor-pointer;
+}
+
+.item-is-active {
+}

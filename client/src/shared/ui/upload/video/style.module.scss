@@ -1,0 +1,13 @@
+.root {
+  & > span:first-child {
+    @apply text-gray-600 uppercase mb-5;
+  }
+}
+
+.label {
+  @apply block mb-5 text-sm uppercase text-gray-600;
+}
+
+.error {
+  @apply text-red-500 mt-3;
+}

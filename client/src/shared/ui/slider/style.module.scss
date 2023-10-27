@@ -1,0 +1,18 @@
+.root {
+  height: 5px;
+  @apply w-full rounded-full bg-white/50 cursor-pointer;
+}
+
+.track {
+  @apply relative h-full rounded-full bg-white;
+}
+
+.thumb {
+  width: 10px;
+  height: 10px;
+  @apply absolute top-1/2 right-0 rounded-full bg-slate-100 -translate-y-1/2 translate-x-1/2;
+}
+
+.thumb-is-active {
+  @apply scale-110;
+}

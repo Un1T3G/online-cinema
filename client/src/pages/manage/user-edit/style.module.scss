@@ -1,0 +1,16 @@
+.root {
+  @apply flex justify-center;
+}
+
+.form {
+  max-width: 320px;
+  @apply bg-zinc-800 p-5 rounded-md w-full;
+
+  & > div {
+    @apply mb-5;
+  }
+
+  & > button {
+    @apply w-full;
+  }
+}

@@ -1,0 +1,7 @@
+.root {
+  @apply list-none flex flex-col;
+
+  & > li {
+    @apply block w-full;
+  }
+}
