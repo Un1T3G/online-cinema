@@ -12,6 +12,19 @@ Features
     Streaming and Playback: Users can stream movies and TV shows directly from the application and enjoy seamless playback.
     Admin Panel: Administrators have access to an admin panel where they can manage the content, including adding, editing, and deleting movies and TV shows. They can also manage user accounts and perform administrative tasks.
 
+### Screenshot
+
+![Screenshot](./screenshots/admin-edit.png)
+![Screenshot](./screenshots/admin-list.png)
+![Screenshot](./screenshots/admin-movies.png)
+![Screenshot](./screenshots/admin-stat.png)
+![Screenshot](./screenshots/auth.png)
+![Screenshot](./screenshots/discovery.png)
+![Screenshot](./screenshots/fresh-movies.png)
+![Screenshot](./screenshots/home.png)
+![Screenshot](./screenshots/movie-page-not-auth.png)
+![Screenshot](./screenshots/movie-page.png)
+
 # Technologies Used
 
 The Online Cinema Project is built using the following technologies:
